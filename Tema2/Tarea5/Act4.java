@@ -12,10 +12,15 @@ public class Act4 {
         System.out.println("Introduce un numero");
         int num1 = teclado.nextInt();
 
+        int contador=0;
+
         if(num%2==0 || num1%2==0){
-            System.out.println("son par");
-        }else{
-            System.out.println("No son par");
+            contador++;
         }
+
+        if(num%2==0 || num1%2==0){
+            contador++;
+        }
+        System.out.println("El número de números pares introducidos es: " +contador);
     }
 }
